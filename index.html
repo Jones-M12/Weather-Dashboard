@@ -14,7 +14,7 @@
 <!-- Nav Bar-->
   <nav class="navbar navbar-dark bg-dark">
     <div class= "text-center col-md-12">
-    <span class="navbar-brand mb-0 h1">
+    <!-- <span class="navbar-brand mb-0 h1"> -->
     <h1>Weather Dasdboard Application</h1>
     </span>
     </div>
@@ -23,85 +23,65 @@
   <div class= "container">
     <div class= "row">
       
-      <div class="jumbotron col-sm-4">
-        <h4>Search a City:</h4>
+      <div class="jumbotron col-4">
 
-        <!-- City Searh Input Field-->
-        <input id="inputEl" size="26" type="search" placeholder="Search" aria-label="Search">
-       
-        <!-- Search Button-->
-        <button id= "searchBtnEl" class="btn btn-outline-primary" type="submit"><svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
-          <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
-        </svg></button>
+        <div class="row">
 
-        <!-- Line Break-->
-        <hr class="my-4">
-        <!--End Line Break-->
-      </div>
-      <div class= "row">
-        <div class= "col-sm-4">
-        <!--Search Results: prepend -->
-        <ul id= "searchResultsEl"></ul> 
-        
-        </div>
-      </div>
-      
+          <div class="col-12">
+            <h4>Search a City:</h4>
 
-
-
-
-
-      
-      <!-- Start Second Column -->
-      <section class="card col-sm-7">
-        <p class= "card-header city"></p>
-        <section class="card-body">
-          <p class="wind"></p>
-          <p class="humidity"></p>
-          
-          <p class="tempF"></p>
-          <p class="uVIndex"></p>
-          <div class="forecast">
-            <h3>5- Day Forecast:</h3>
-            <p class="forecastEl"></p>
-
+            <!-- City Searh Input Field-->
+            <input id="inputEl" size="26" type="search" placeholder="Search" aria-label="Search">
+           
+            <!-- Search Button-->
+            <button id= "searchBtnEl" class="btn btn-outline-primary" type="submit"><svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
+              <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
+            </svg></button>
+    
+            <!-- Line Break-->
+            <hr class="my-4">
+          </div>
+          <div class= "col-12">
+            <!--Search Results: prepend -->
+            <ul id= "searchHistoryUl">
+            </ul> 
+           
+            </div>
           </div>
           
-          
-        </section>
 
-        
-      </section>
-        
+        </div>
+   
       
-          
-     
+        <div class="col-8">
+
+  <div class= "row">
+   
+    <div class="col-12">
+      <h3 id="cityName"></h3>
+      <h5 id="temp"></h5>
+      <h5 id="hum"></h5>
+      <h5 id="speed"></h5>
+      <h5 id="uv"></h5>
+    </div>
+    <div class="col-12" id="forecast">
+
+    </div>
+     </div>
+
+        </div>
       </div>
-
-        
-
-        
-          
-
-      </div>
-
-
-      
-
-        
-        
+    
+    </div>
+ </div>
     
 
 
-
-  </div>
     
-
-
-    <script src="./script.js"> </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"> </script>
 </body>
 </html>

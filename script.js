@@ -8,6 +8,7 @@ $(document).ready(function(){
     $("#searchBtnEl").on("click",function(event){
         var cityName= $("#inputEl").val();
        getCurrentWeather(cityName);
+       getForecast(cityName);
 
     })
 
@@ -73,10 +74,10 @@ var queryURL =`http://api.openweathermap.org/data/2.5/uvi?appid=${APIKey}&lat=${
 
 }
 
-function getCurrentWeather(forecast) {
+function getForecast(cityName) {
 
     // Here we are building the URL we need to query the database
-var queryURL = `http://api.openweathermap.org/data/2.5/weather?q=${forecast}&appid=${APIKey}&units=imperial`;
+var queryURL = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${APIKey}&units=imperial`;
 
 $.ajax({
 url: queryURL,
@@ -88,6 +89,7 @@ method: "GET"
   // Log the resulting object
   console.log(response);
 
+  $("#forecast").text("5 Day Forecast: " + response.list);
   
 });
 

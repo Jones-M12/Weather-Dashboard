@@ -89,8 +89,15 @@ method: "GET"
   // Log the resulting object
   console.log(response);
 
-  $("#forecast").text("5 Day Forecast: " + response.list);
-  
+//   $("#forecast").text("<h5>5 Day Forecast: </h5>") ::: attempting to create 5day forecast results lines 92-100
+    
+    response.list.main.forEach(res =>{
+        var col= $('<div class="col-1.5 ">');
+    });
+
+    // var date= $('<span class="card-title">').text(res.list.main.dt_txt);
+
+   $("#forecast").append(col)
 });
 
 }

@@ -16,7 +16,7 @@ $(document).ready(function(){
     function getCurrentWeather(cityName) {
 
             // Here we are building the URL we need to query the database
-    var queryURL = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIKey}&units=imperial`;
+    var queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIKey}&units=imperial`;
 
     $.ajax({
         url: queryURL,
@@ -29,7 +29,7 @@ $(document).ready(function(){
           console.log(response);
   
           // Transfer content to HTML
-          var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png");
+          var img = $("<img>").attr("src", "https://openweathermap.org/img/w/" + response.weather[0].icon + ".png");
           $("#cityName").text(response.name + " (" + new Date().toLocaleDateString() + ")").append(img);
                // Convert the temp to fahrenheit
           var tempF = (response.main.temp - 273.15) * 1.80 + 32;
@@ -50,7 +50,7 @@ $(document).ready(function(){
     function getUVIndex(lat, lon) {
 
         // Here we are building the URL we need to query the database
-var queryURL =`http://api.openweathermap.org/data/2.5/uvi?appid=${APIKey}&lat=${lat}&lon=${lon}`;
+var queryURL =`https://api.openweathermap.org/data/2.5/uvi?appid=${APIKey}&lat=${lat}&lon=${lon}`;
 
     $.ajax({
         url: queryURL,
@@ -77,7 +77,7 @@ var queryURL =`http://api.openweathermap.org/data/2.5/uvi?appid=${APIKey}&lat=${
 function getForecast(cityName) {
 
     // Here we are building the URL we need to query the database
-var queryURL = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${APIKey}&units=imperial`;
+var queryURL = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${APIKey}&units=imperial`;
 
 $.ajax({
 url: queryURL,

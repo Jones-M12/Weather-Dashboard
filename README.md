@@ -19,7 +19,6 @@ SO THAT I can plan a trip accordingly
 
 ## Review
 
-You are required to submit the following for review:
 
 * The URL of the deployed application: https://jones-m12.github.io/Weather-Dashboard/
 

@@ -24,5 +24,13 @@ SO THAT I can plan a trip accordingly
 
 * The URL of the GitHub repository: https://github.com/Jones-M12/Weather-Dashboard.git
 
+## Contact
+
+* Github: [Jones-M12](https://github.com/Jones-M12) 
+
+* Email: malesharj@gmail.com 
+
+* LindedIn: [m-jones89](https://www.linkedin.com/in/m-jones89/)
+
 
 

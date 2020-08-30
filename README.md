@@ -13,7 +13,7 @@ SO THAT I can plan a trip accordingly
 ```
 
 
-The following image demonstrates the application functionality:
+## The following image demonstrates the application functionality:
 
 ![weather dashboard](./Assets/weatherdasboard.PNG)
 

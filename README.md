@@ -2,7 +2,7 @@
 
 Designed for retrieving weather data from an API, used to support the application functionality to allow users to get real time weather updates. 
 
-Technologies:  HTML, CSS, JQuery, Open Weather Map API.
+Technologies:  HTML, CSS, jQuery, Bootstrap Open Weather Map API.
 
 ## User Story
 
@@ -15,7 +15,15 @@ SO THAT I can plan a trip accordingly
 
 ## The following image demonstrates the application functionality:
 
+*	Input City in the input field
+*	Click Search Icon button
+* Results will display on the right side
+
 ![weather dashboard](./Assets/weatherdasboard.PNG)
+
+## Future Development:
+
+* Support ability to render 5 day forecast
 
 ## Review
 
@@ -26,11 +34,10 @@ SO THAT I can plan a trip accordingly
 
 ## Contact
 
-* Github: [Jones-M12](https://github.com/Jones-M12) 
+* GitHub: [Jones-M12](https://github.com/Jones-M12) 
 
 * Email: malesharj@gmail.com 
 
-* LindedIn: [m-jones89](https://www.linkedin.com/in/m-jones89/)
-
+* LinkedIn: [m-jones89](https://www.linkedin.com/in/m-jones89/)
 
 
